@@ -1,0 +1,106 @@
+
+/*
+    - letter-spacing
+    - box-sizing: border-box => dùng để tính toán kích thước 1 phần tử
+                  bao gồm cả boder, content, paddinng (ko có margin)  
+                    mặc định là: box-sizing: content-box(chi tinh content)
+    -THuộc tính "diplay: flex" và 'justify-content':dùng để
+    điều chỉnh các phần tử con trong thẻ cha
+    -:not(selector) {styles; } => dùng để loại bỏ những style ko cần đến                
+*/
+
+
+/* STYLE */
+
+.bold{
+    font-weight: 800;
+}
+.large{
+    height: 10px;
+}
+.medium{
+    height: 5px;
+}
+.large, .medium
+{
+    background-color: black;
+    border: 0;
+}
+.small-text{
+    font-size: 0.85rem;
+}
+
+.right{
+    /* Chỉnh góc dưới phải */
+    justify-content: flex-end;
+}
+
+.divider {
+    /* Tao thanh ke ngang */
+    margin: 2px 0;
+    border-bottom: 1px solid #888989;
+}
+
+.indent{
+    /* Thụt lề */
+    margin-left: 1em;
+}
+.double-indent{
+    margin-left: 2em;
+}
+/* ------------------ */
+
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+body{
+    font-family:  "Open Sans", sans-serif;
+}
+.label{
+    width: 270px;
+    border: 2px black solid;
+    margin: 20px auto;
+    padding: 0 7px;
+}
+header h1{
+    text-align: center;
+    margin: -4px 0;
+    letter-spacing: 0.15px;
+}
+p{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.calories-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.calories-info h2{
+    margin: 0;
+}
+.calories-info span{
+    margin: -7px -2px;
+    font-size: 2.4em;
+    font-weight: 700;
+}
+.left-container p{
+    margin: -5px -2px;
+    font-size: 2em;
+    font-weight: 700;
+}
+.daily-value p:not(.no-divider){
+    border-bottom: 1px solid #888989;
+}
+.note{
+    font-size: 0.6rem;
+    margin: 5px 0;
+    padding: 0 8px;
+    text-indent: -8px;
+}
+
+
