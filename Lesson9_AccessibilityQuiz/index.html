@@ -13,7 +13,7 @@
         <h1>HTML/CSS Quiz</h1>
         <nav>
            <ul>
-           <li><a href="#student-info">INFO</a></li>
+           <li><a href="#student-info" accesskey="a">INFO</a></li>
            <li><a href="#html-questions">HTML</a></li>
            <li><a href="#css-questions">CSS</a></li>
            </ul>
@@ -61,9 +61,36 @@
             </section>
             <section role="region" aria-labelledby="css-questions">
                 <h2 id="css-questions">css-questions</h2>
-
+                <div class="formrow">
+                    <div class="question-block">
+                        <label for="customer">Are you a frontend developer?</label>
+                    </div>
+                    <div class="answer">
+                        <select name="customer" id="customer" required>
+                            <option value="">Select an Option</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">NO</option>
+                        </select>
+                    </div>
+                    <div class="question-block">
+                        <label for="">Do you have any questions:</label>
+                    </div>
+                    <div class="answer">
+                        <textarea name="" id="" cols="24" rows="5" placeholder="describing an example answer"></textarea>
+                    </div>
+                </div>
             </section>
+            <button type="submit" >Send</button>
         </form>
     </main>
+
+    <footer>
+        <address>
+            <a href="https://freecodecamp.org">freeCodeCamp</a><br />
+            San Francisco<br />
+            California<br />
+            USA
+        </address>
+    </footer>
 </body>
 </html>

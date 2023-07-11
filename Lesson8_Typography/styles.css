@@ -6,14 +6,18 @@
                     mặc định là: box-sizing: content-box(chi tinh content)
     -THuộc tính "diplay: flex" và 'justify-content':dùng để
     điều chỉnh các phần tử con trong thẻ cha
+    NODE: justify-content đặt trong thẻ cha
+        tương tự có justify self giống content nhưng dặt trong thẻ con
     -:not(selector) {styles; } => dùng để loại bỏ những style ko cần đến                
 */
 
 
 /* STYLE */
 
+
 .bold{
     font-weight: 800;
+    
 }
 .large{
     height: 10px;
