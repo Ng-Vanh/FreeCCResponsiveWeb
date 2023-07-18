@@ -1,0 +1,30 @@
+@media  (max-width: 740px){
+    #header{
+        display: flex;
+        flex-direction: column;
+    }
+    #nav-bar ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    #nav-bar ul li a{
+        font-size: 1rem;
+        margin: 5px;
+    }
+    .get-form{
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 60px;
+    }
+    .get-form h2{
+        font-size: 1.5rem;
+    }
+    
+}
